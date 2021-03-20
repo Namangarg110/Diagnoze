@@ -21,11 +21,15 @@ def scaler_heart():
 def index():
     return render_template('index.html')
 
-@app.route('/tumor')
-def tumor():
-    return render_template('first.html')
+@app.route('/index.html')
+def index_html():
+    return render_template('index.html')
 
-@app.route('/heart_attack',methods=['POST','GET'])
+@app.route('/tumor.html')
+def tumor():
+    return render_template('tumor.html')
+
+@app.route('/heart_attack.html',methods=['POST','GET'])
 def heart_attack():
     if request.method == 'POST':   
         age= int(request.form['Age'])
@@ -55,14 +59,19 @@ def heart_attack():
         # return render_template('second.html',result = pred )
         return str(pred)
     else:
-        return render_template('second.html')
+        return render_template('heart_attack.html')
 
-@app.route('/diabetes')
+@app.route('/diabetes.html')
 def diabetes():
-    return render_template('third.html')
+    return render_template('diabetes.html')
 
-@app.route('/diabetes')
-def diabetes():
-    return render_template('third.html')
+@app.route('/corona.html')
+def corona():
+    return render_template('corona.html')
+
+@app.route('/about.html')
+def aboutus():
+    return render_template('about.html')
+
 if __name__ =="__main__":
     app.run(debug=True)
