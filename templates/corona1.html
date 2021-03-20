@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coronavirus| DIAGNOZE</title>
+  <script src="https://kit.fontawesome.com/a507955c58.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="{{url_for('static', filename='images/logo2.png')}}" rel="icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style4_cor.css') }}">
+  <!-- <link rel="stylesheet" href="style4.css"> -->
+
+  <!-- upload link start  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <!-- upload link end  -->
+
+</head>
+
+<body>
+
+  <div class='particle-network-animation'>
+  </div>
+  <div class="header">
+
+    <nav class="navbar navbar-default" id="start">
+      <div class="navbar-header">
+        <div id="mobilelogo"><a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px"
+              width="80px"> </a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+        <div class="navbar navbar-right ">
+          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a>
+          <ul>
+            <a  href="index.html"><span>Home</span></a>
+            <a  href="tumor.html"><span>Tumor</span></a>
+            <a href="heart_attack.html"><span>Heart Attack</span></a>
+            <a href="diabetes.html"><span>Diabetes</span></a>
+            <a class="active" href="corona.html"><span>Coronavirus</span></a>
+            <a href="about.html"><span>About Us</span></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<center><h1 style="font-size:45px ;padding-top:80px; font-family: Georgia, 'Times New Roman', Times, serif; color:white;">Coronavirus Detector</h1></center>
+
+
+<form id="file-upload-form" class="uploader" action="http://localhost:5000/corona.html" enctype="multipart/form-data" method="POST">
+  <!-- <input id="file-upload" type="file" name="fileUpload" accept="image/*" /> -->
+  <h3 style="color:white; padding:10px;">Upload File (X-RAY)</h3>
+  <label for="file-upload" id="file-drag" class="custom-file-upload">
+    <img id="file-image" src="{{url_for('static', filename='uploader/upload.png')}}" alt="Preview" class="hidden" width="18%" height="18%">
+    <input id="file-upload" type="file" name="fileUpload" onchange="document.getElementById('upload').click()" accept="image/*" />
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select an image</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+  <input id="upload" type="Submit" value="Upload" style="display: none;" />
+</form>
+
+  <div class="container content">
+    <h2 style="color: white; font-size: 30px;padding: 0 12px;">More about it.....</h2>
+    <div class="raw">
+        <div class="col-md-4 text-center" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Real-time%20information.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder; font-size: 16px;">Coronavirus</h4>
+                <p class="content-box-sub">
+                  <li>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</li>
+  
+                  <li>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose,when an infected person coughs or sneezes.</li>
+                  
+                  <li>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.</li>
+                  
+                  <li>Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</li>
+  
+  
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Higher Productivity" title="Higher Productivity" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Higher%20Productivity.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder;">Symptoms</h4>
+                <p class="content-box-sub">
+                  <li>Fever</li>
+                  <li>Dry cough</li>
+                  <li>Tiredness</li>
+                  <li>Loss of taste or smell</li>
+                  <li>Difficulty breathing or shortness of breath</li>
+                  <li>Chest pain or pressure</li>
+                  <li>Aches and pains</li>
+                  <li>Sore throat</li>
+                  <li>Diarrhoea</li>
+                  
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Improved Collaboration" title="Improved Collaboration" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Improved%20Collaboration.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder;">Prevention</h4>
+                <p class="content-box-sub">
+                  <li>Wash your hands regularly with soap and water, or clean them with sanitizer.</li>
+                  <li>Maintain social distancing.</li>
+                  <li>Avoid touching your face.</li>
+                  <li>Cover your mouth and nose when coughing or sneezing.</li>
+                  <li>Stay home if you feel unwell.</li>
+                  <li>Refrain from smoking and other activities that weaken the lungs.</li>
+  
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+
+<br>
+  <footer>
+    <center>
+      <p>&copy; Hash 2021. All rights reserved | Made with <i class="fas fa-heartbeat" style="color: red;"></i></p>
+    </center>
+  </footer>
+  
+  <!-- <script type="text/javascript" src="java.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="{{url_for('static', filename='js/script_cor.js')}}"></script>
+  <script src="{{url_for('static', filename='js/script1_cor.js')}}"></script>
+
+
+
+</body>
+
+</html>

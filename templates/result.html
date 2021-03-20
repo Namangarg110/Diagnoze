@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Result | DIAGNOZE</title>
+  <script src="https://kit.fontawesome.com/a507955c58.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="{{url_for('static', filename='images/logo2.png')}}" rel="icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style6_res.css') }}">
+  <!-- <link rel="stylesheet" href="style6.css"> -->
+  <!-- process link start  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900'>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'> -->
+  <!-- <link rel='stylesheet' href='https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css'> -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
+  <!-- process link end  -->
+
+</head>
+
+<body>
+
+  <div class='particle-network-animation'>
+  </div>
+  <div class="header">
+
+    <nav class="navbar navbar-default" id="start">
+      <div class="navbar-header">
+        <div id="mobilelogo"><a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px"
+              width="80px"> </a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+        <div class="navbar navbar-right ">
+          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a>
+          <ul>
+            <a href="index.html"><span>Home</span></a>
+            <a href="tumor.html"><span>Tumor</span></a>
+            <a href="heart_attack.html"><span>Heart Attack</span></a>
+            <a href="diabetes.html"><span>Diabetes</span></a>
+            <a href="corona.html"><span>Coronavirus</span></a>
+            <a href="about.html"><span>About Us</span></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container res">
+<h1>Your Result is here!!!</h1>
+
+<p>{{report}}</p>
+</div>
+  <footer>
+    <center>
+      <p>&copy; Hash 2021. All rights reserved | Made with <i class="fas fa-heartbeat" style="color: red;"></i></p>
+    </center>
+  </footer>
+  <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script type="text/javascript" src="java.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- <script scr="script.js"></script> -->
+  <script src="{{url_for('static', filename='js/script_res.js')}}"></script>
+
+
+</body>
+
+</html>

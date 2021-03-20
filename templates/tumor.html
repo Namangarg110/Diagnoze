@@ -81,7 +81,8 @@
 
       <div class="w-full md:w-1/2">
           <main class="main index">
-              <file-drop
+              <file-drop name="tumor_file"
+                         method="POST"
                          :picker-trigger="filePickerTrigger"
                          v-model="files"
                          class="px-4 py-12"

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tumor | DIAGNOZE</title>
+  <script src="https://kit.fontawesome.com/a507955c58.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="{{url_for('static', filename='images/logo2.png')}}" rel="icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_tumor.css') }}">
+
+  <!-- upload link start  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <!-- upload link end  -->
+
+</head>
+
+<body>
+
+  <div class='particle-network-animation'>
+  </div>
+  <div class="header">
+
+    <nav class="navbar navbar-default" id="start">
+      <div class="navbar-header">
+        <div id="mobilelogo"><a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px"
+              width="80px"> </a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+        <div class="navbar navbar-right ">
+          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a>
+          <ul>
+            <a  href="index.html"><span>Home</span></a>
+            <a class="active" href="tumor.html"><span>Tumor</span></a>
+            <a href="heart_attack.html"><span>Heart Attack</span></a>
+            <a href="diabetes.html"><span>Diabetes</span></a>
+            <a href="corona.html"><span>Coronavirus</span></a>
+            <a href="about.html"><span>About Us</span></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<center><h1 style="font-size:45px ;padding-top:80px; font-family: Georgia, 'Times New Roman', Times, serif; color:white;">Tumor Detector</h1></center>
+<center><p style="color: white;">(Pituitary |  Meninginma | Glioma)</p></center>
+
+<form id="file-upload-form" class="uploader" action="http://localhost:5000/tumor.html" enctype="multipart/form-data" method="POST">
+  <!-- <input id="file-upload" type="file" name="fileUpload" accept="image/*" /> -->
+  <h3 style="color:white; padding:10px;">Upload File (MRI scan)</h3>
+  <label for="file-upload" id="file-drag" class="custom-file-upload">
+    <img id="file-image" src="{{url_for('static', filename='uploader/upload.png')}}" alt="Preview" class="hidden" width="18%" height="18%">
+    <input id="file-upload" type="file" name="fileUpload" onchange="document.getElementById('upload').click()" accept="image/*" />
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select an image</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+  <input id="upload" type="Submit" value="Upload" style="display: none;" />
+</form>
+
+  <div class="container content">
+    <h2 style="color: white; font-size: 30px;padding: 0 12px;">More about it.....</h2>
+    <div class="raw">
+        <div class="col-md-4 text-center" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Real-time information" title="Real-time information" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Real-time%20information.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder; font-size: 16px;">Pituitary Tumor</h4>
+                <p class="content-box-sub">
+                    <li> Pituitary tumors are abnormal growths that develop in your pituitary gland.
+                    <li>Some pituitary tumors result in too much of the hormones that regulate important functions
+                        of your body while others can cause your pituitary gland to produce lower levels of
+                        hormones.</li>
+                    </li>
+                    <li> Most pituitary tumors are noncancerous (benign) growths (adenomas).</li>
+  
+                    <li> There are various options for treating pituitary tumors, including removing the tumor,
+                        controlling its growth and managing your hormone levels with medications. </li>
+  
+  
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Higher Productivity" title="Higher Productivity" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Higher%20Productivity.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder;">Meningioma Tumor</h4>
+                <p class="content-box-sub">
+                    <li>A meningioma is a tumor that forms on membranes that cover the brain and spinal cord just
+                        inside the skull.</li>
+                    <li>These tumors are often slow-growing. As many as 90% are benign (not cancerous).</li>
+                    <li>Often, meningiomas cause no symptoms and require no immediate treatment. But the growth of
+                        benign meningiomas can cause serious problems. In some cases, such growth can be fatal.</li>
+                    <li>A biopsy may sometimes be performed. A surgeon removes part or all of the tumor to determine
+                        whether it is benign or malignant.</li>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4" style="opacity: 1;">
+            <div class="content-box">
+                <!-- <img alt="Improved Collaboration" title="Improved Collaboration" class="finbyz-icon img-responsive"
+                    src="https://finbyz.tech/svg/icon%20Improved%20Collaboration.svg"> -->
+                <h4 class="content-box-title" style="font-weight: bolder;">Glioma Tumor</h4>
+                <p class="content-box-sub">
+                    <li>Glioma is a type of tumor that occurs in the brain and spinal cord.</li>
+                    <li>Gliomas are classified according to the type of glial cell involved in the tumor, as well as
+                        the tumor's genetic features, which can help predict how the tumor will behave over time and
+                        the treatments most likely to work.</li>
+                    <li>A glioma can affect your brain function and be life-threatening depending on its location
+                        and rate of growth.</li>
+                    <li>glioma treatment options include surgery, radiation therapy, chemotherapy, targeted therapy
+                        and experimental clinical trials.</li>
+  
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+<br>
+  <footer>
+    <center>
+      <p>&copy; Hash 2021. All rights reserved | Made with <i class="fas fa-heartbeat" style="color: red;"></i></p>
+    </center>
+  </footer>
+  
+  <!-- <script type="text/javascript" src="java.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="{{url_for('static', filename='js/script_tumor.js')}}"></script>
+  <script src="{{url_for('static', filename='js/script1_tumor.js')}}"></script>
+
+
+
+</body>
+
+</html>
