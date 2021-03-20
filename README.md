@@ -9,9 +9,9 @@ Hash
 
 ## Team Members
 Naman Garg - ML/AI developer \
-Mudit Jindal - ML/AI developer \ 
-Amisha Jaiswal - WEB developer \
-Tanishq Kumar - WEB developer \
+Mudit Jindal - ML/AI developer <br>
+Amisha Jaiswal - WEB developer <br>
+Tanishq Kumar - WEB developer\
 Dhanya Sri Aravapalli - WEB developer \
 
 ## Tech Stack
