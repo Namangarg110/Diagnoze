@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="image1.jpeg" rel="icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 
   <!-- process link start  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -44,12 +45,12 @@
       <div class="collapse navbar-collapse" id="bs-nav-demo">
 
         <div class="navbar navbar-right ">
-          <a href="index.html" class="logo"> <img src="images/logo3.png" alt="Logo" height="80px" width="80px"> </a>
+          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a>
           <ul>
-            <a class="active" href="index.html"><span>Home</span></a>
-            <a href="first.html"><span>Tumor</span></a>
-            <a href="second.html"><span>Heart Attack</span></a>
-            <a href="third.html"><span>Diabetes</span></a>
+            <a class="active" href="index.html"><span>Home</span><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="subpage/subpage 1/first.html"><span>Tumor</span><i class="fas fa-user"></i></a>
+            <a href="subpage/subpage 2/first.html"><span>Heart Attack</span><i class="fas fa-briefcase"></i></a>
+            <a href="subpage/subpage 3/first.html"><span>Diabetes</span><i class="fas fa-phone-volume"></i></a>
           </ul>
         </div>
       </div>
@@ -64,11 +65,11 @@
           to gali suno lo sunooo kuttooo...and ya befor
           you guys give me gaali this is just a random image we can replace it.
         </p>
-        <a href="#section2"><button type="menu">Get Started</button></a>
+        <button type="menu">Get Started</button>
       </div>
 
       <div class="col-sm-6 second">
-        <img src="images/image3.png">
+        <img src="{{url_for('static', filename='images/image3.png')}}">
       </div>
     </div>
   </section>
@@ -79,7 +80,7 @@
   
 
 
-  <section class="section3">
+  <section class="section3" style="background-image: url({{ url_for('static', filename='images/bg6.jpg')}})">
 
     <section class="text-center pos-r">
       <div class="container">
@@ -978,28 +979,29 @@
     </section>
   </section>
 <div style="width: 100%; position:relative; bottom: 3px;">
-  <img style="width: 100%" src="images/bg7.png">
+  <img style="width: 100%" src="{{url_for('static', filename='images/bg7.png')}}">
 </div>
-  <section id="section2" class="section2">
+  <section class="section2">
 
     <center>
       <h1><span>___What we provide___</span></h1>
     </center>
     <div class="col-md-4 text-center">
-      <img src="images/brain5.gif" alt="its me your brain" />
+      <img src="{{url_for('static', filename='images/brain5.gif')}}" />
       <p>Hello in there i m brain tumor detector. Use me to know your brain's health. heehahahhahahah</p>
-      <center><a href="first.html"><button type="button">Tumor</button></a></center>
+      <center><a href=""><button type="button">Tumor</button></a></center>
     </div>
     <div class="col-md-4 text-center">
-      <img src="images/heart.gif" alt="its me your brain" />
+      <img src="{{url_for('static', filename='images/heart.gif')}}" />
       <p>Hello it's your heart speaking. Please pay attention to me. Please click the button below to know my
         well-being.</p>
-      <center><a href="second.html"><button type="button">Heart Attack</button></a></center>
+      <center><a href=""><button type="button">Heart Attack</button></a></center>
     </div>
     <div class="col-md-4 text-center">
-      <img src="images/diabetes.gif" alt="its me your brain" />
+      <img src="{{url_for('static', filename='images/diabetes.gif')}}" />
+      
       <p>Hello I am your kidney. Please dont let your diabetes affect me. Get your diabetes checked right now.</p>
-      <center><a href="third.html"><button type="button">Diabetes</button></a></center>
+      <center><a href=""><button type="button">Diabetes</button></a></center>
     </div>
 
   </section>
@@ -1020,18 +1022,22 @@
 
 
 
+
   <!-- <script type="text/javascript" src="java.js"></script> -->
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="./script.js"></script>
+  <!-- <script src="./script.js"></script> -->
+  <script src="{{url_for('static', filename='js/script.js')}}"></script>
 
 
   <!-- process script start  -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg.js'></script>
-  <script src="processscript.js"></script>
+  <!-- <script src="processscript.js"></script> -->
+  <script src="{{url_for('static', filename='js/processscript.js')}}"></script>
+
   <!-- process script end  -->
 
 </body>
