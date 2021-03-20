@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 50px;">
+        <form action="/" method="POST">
+            <!-- Age section start -->
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name ="Age" id="Age"  placeholder="Age">
+                </div>
+            </div>
+            <!-- Age section end -->
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">TotChol</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="TotChol" id="TotChol" placeholder="TotChol">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">SysBP</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="SysBP" id="SysBP" placeholder="SysBP">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">DiaBP</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="DiaBP" id="DiaBP" placeholder="DiaBP">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">BMI</label>
+                <div class="col-sm-10">
+                    <input type="number" step="0.01" class="form-control" name="BMI" id="BMI" placeholder="BMI">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Heart rate</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="Heart_rate" id="Heart_rate" placeholder="Heart rate">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Glucose</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="Glucose" id="Glucose" placeholder="Glucose">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Gender<span class="form-required">*</span></label>
+                <div class="col-sm-10">
+                    <select class="input" name="gender" required="" id="gender">
+                        <option value=""> </option>
+                        <option value="Male"> Male </option>
+                        <option value="Female"> Female </option>
+                        <option value="Not willing to Disclose"> Not willing to Disclose </option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            
+            
+        </form>
+    </div>
+
+</body>
+
+</html>
