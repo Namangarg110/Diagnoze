@@ -68,6 +68,11 @@
   background-color: #f3ec78;
   background-image: linear-gradient(45deg, #f3ec78, #e60a48);
   background-size: 100%;
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+  background-clip: text;
+
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
