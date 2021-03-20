@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="{{url_for('static', filename='images/logo2.png')}}" rel="icon">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style6_res.css') }}">
-  <!-- <link rel="stylesheet" href="../static/css/style6_res.css"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style6_res.css') }}"> -->
+  <link rel="stylesheet" href="../static/css/style6_res.css">
   <!-- process link start  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900'>
@@ -60,16 +60,16 @@
 
 <div class="container res">
 <h1>Your Result is here!!!</h1>
-<div class="col-sm-4 first">
+<!-- <div class="col-sm-4 first">
 <img  src="{{url_for('static', filename='images/success.gif')}}">
-</div>
-<p class="col-sm-4">{{report}}</p>
+</div> -->
+<p class="" style="text-align: center; margin-top: 60px; background-color: rgb(178, 252, 129);  border-radius: 3px;  padding:9px; margin: 80px 80px;">{{report}}</p>
 
 
-<div class="col-sm-4 second">
+<!-- <div class="col-sm-4 second">
   <img  src="{{url_for('static', filename='images/success2.gif')}}">
-  </div>
-</div>
+  </div>-->
+</div> 
 
 
   <footer>
