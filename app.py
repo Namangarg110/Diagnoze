@@ -62,7 +62,7 @@ def heart_attack():
         else:
             pred = "Patient May have heart Attack"
         # return render_template('second.html',result = pred )
-        return str(pred)
+        return render_template('result.html',report= str(pred))
     else:
         return render_template('heart_attack.html')
 
@@ -100,7 +100,7 @@ def diabetes():
             res ="Patient is Diabetic"
         else:
             res ="Patient is not Diabetic"
-        return res
+        return render_template('result.html',report= res)
     else:
         return render_template('diabetes.html')
 
