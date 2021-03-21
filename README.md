@@ -49,30 +49,31 @@ __Web Site__
 ## Introduction
 We at Diagnoze aim to provide quick results to the problems faced by our clients.Our webapp works on the principle of taking in info regarding the problem and giving instant results which guide them in taking further step towards treatment.Using this process,we have tried to reduce human errors on any ground.We mainly plan to develop a system where the complexity and computation time is low and accuracy is high.
 
-## Working
+# Working
 *Using Deep Learning and web app we have implimented the followings :- 
 
-* **Tumor:-** We took Images of MRI Scan from the user as input and then using deep learning,we checked for the presence of tumors in the Image.Then according to the result,we have suggested the user to seek professional medical help.
-Model Used :- Convolutional Neural Network
-Accuracy Achieved :-95.34%
+## Tumor
+* We took Images of MRI Scan from the user as input and then using deep learning,we checked for the presence of tumors in the Image.Then according to the result,we have suggested the user to seek professional medical help.
+* Model Used :- Convolutional Neural Network
+* Accuracy Achieved :-95.34%
+*
+
+## Diabetes
+* We have used regular health dataset with features like blood pressure,heart rate,age,gender,chest pain etc. to predict if the patient has diabetes or not.
 
 
-
-* **Diabetes:-** We have used regular health dataset with features like blood pressure,heart rate,age,gender,chest pain etc. to predict if the patient has diabetes or not.
-
-
-
-* **Heart Attack:-** Using regular health data,we predicted if the patient is at the risk of a heart attack.
+## Heart Attack 
+* Using regular health data,we predicted if the patient is at the risk of a heart attack.
 
 
+## Corona Virus 
+* Taking in the chest x-ray from the patient and considering the general health details,we tried to anticipate if the user has corona virus.
 
-* **Corona Virus:-** Taking in the chest x-ray from the patient and considering the general health details,we tried to anticipate if the user has corona virus.
+* **Model Used** :- Fine Tuned MobileNet
 
-**Model Used** :- Fine Tuned MobileNet
+* **Accuracy Achieved** :- 99.58%
 
-**Accuracy Achieved** :- 99.58%
-
-**About Model** :- The first 23 layers of the mobilenet architecture were frozen and the rest of the layers were trained using the data,The image was preprocessed according to the mobileNet, The Adam optimizer was used and the loss function used was binary_crossentropy
+* **About Model** :- The first 23 layers of the mobilenet architecture were frozen and the rest of the layers were trained using the data,The image was preprocessed according to the mobileNet, The Adam optimizer was used and the loss function used was binary_crossentropy
 
 
 
