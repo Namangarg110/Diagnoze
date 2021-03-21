@@ -56,14 +56,19 @@ We at Diagnoze aim to provide quick results to the problems faced by our clients
 * We took Images of MRI Scan from the user as input and then using deep learning,we checked for the presence of tumors in the Image.Then according to the result,we have suggested the user to seek professional medical help.
 * Model Used :- Convolutional Neural Network
 * Accuracy Achieved :-95.34%
-*
+* About Model :- The architecture of the NN consists of 6 Convolutional layers and a couple of Dense Layers.The SGD optimizer was used and the loss function used was binary_crossentropy
 
 ## Diabetes
 * We have used regular health dataset with features like blood pressure,heart rate,age,gender,chest pain etc. to predict if the patient has diabetes or not.
-
+* Model Used:- Dense Neural Network
+* Accuracy Achieved :- 97%
+* About Model :- The NN consisted of only 3 Dense Layers. Relu and Sigmoid were used as the activation functions.The Adam optimizer was used and the loss function used was binary_crossentropy
 
 ## Heart Attack 
 * Using regular health data,we predicted if the patient is at the risk of a heart attack.
+* Model Used :- SVM Classifier was used
+* Accuracy Achieved :- 87%
+* About Model :- Using Grid Search the hyperparameters were tuned. Gamma = 1 , C=10
 
 
 ## Corona Virus 
