@@ -1,5 +1,10 @@
-# Project Name
-Diagnoze
+<p align="center">
+<a href="https://dscommunity.in">
+	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
+</a>
+	<h2 align="center"> Diagnoze (Disease Detection)</h2>
+	<h4 align="center"> Website which detects different disease<h4>
+</p>
 
 ## Project Track
 Healthcare
@@ -7,12 +12,7 @@ Healthcare
 ## Team Name
 Hash
 
-## Team Members
-Naman Garg - ML/AI developer \
-Mudit Jindal - ML/AI developer <br>
-Amisha Jaiswal - WEB developer <br>
-Tanishq Kumar - WEB developer\
-Dhanya Sri Aravapalli - WEB developer \
+
 
 ## Tech Stack
 HTML, CSS, JAVASCRIPT, BOOTSTRAP - Used for the development of the webapp.\
@@ -32,7 +32,7 @@ For example: \
 
 **Corona Virus:-** Taking in the chest x-ray from the patient and considering the general health details,we tried to anticipate if the user has corona virus.
 
-### Project Link
+### Our Team 
 
 <table>
 <tr align="center">
