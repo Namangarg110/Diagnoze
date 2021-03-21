@@ -43,7 +43,7 @@ __Web Site__
 	-  JAVASCRIPT
 	-  BOOTSTRAP
 	-  FLASK
-	-  NLTK
+
 	
 ## Introduction
 We at Diagnoze aim to provide quick results to the problems faced by our clients.Our webapp works on the principle of taking in info regarding the problem and giving instant results which guide them in taking further step towards treatment.Using this process,we have tried to reduce human errors on any ground.We mainly plan to develop a system where the complexity and computation time is low and accuracy is high.
