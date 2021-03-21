@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://dscommunity.in">
+<a href="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true">
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
 	<h2 align="center"> Diagnoze (Disease Detection)</h2>
