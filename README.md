@@ -66,8 +66,11 @@ Accuracy Achieved :-95.34%
 
 
 **Corona Virus:-** Taking in the chest x-ray from the patient and considering the general health details,we tried to anticipate if the user has corona virus.
+
 **Model Used** :- Fine Tuned MobileNet
+
 **Accuracy Achieved** :- 99.58%
+
 **About Model** :- The first 23 layers of the mobilenet architecture were frozen and the rest of the layers were trained using the data,The image was preprocessed according to the mobileNet, The Adam optimizer was used and the loss function used was binary_crossentropy
 
 
