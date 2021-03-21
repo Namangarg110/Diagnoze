@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/logo3.png">
-	<img src="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/logo3.png" width=80%/>
+	<img src="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/logo3.png" width=20%/>
 </a>
 	<h2 align="center"> Diagnoze (Disease Detection)</h2>
 	<h4 align="center"> Website which detects different disease<h4>
