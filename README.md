@@ -149,9 +149,6 @@ alt="Dhanya Sri Aravapalli">
 </tr>
   </table>
 
-
-
-  
-
-
-
+<p align="center">
+	Made with :heart: by Team HASH</a>
+</p>
