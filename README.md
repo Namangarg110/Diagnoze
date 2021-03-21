@@ -13,15 +13,39 @@ __Web Site__
 <img src="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/screen-capture%20(online-video-cutter.com).gif" />
 
 
+## Functionalities
+
+- [ ]  Detects types of tumor using MRI SCAN 
+- [ ]  Detects Covid-19 using X-RAY
+- [ ]  Detects chances of heart attack using general health data 
+- [ ]  Detects Diabetes using general health data
+- [ ]  User Intractive 
+- [ ]  User Friendly
+
 
 ## Tech Stack
-HTML, CSS, JAVASCRIPT, BOOTSTRAP - Used for the development of the webapp.\
-PYTHON MODULES like keras, tensorflow, pandas – For deep learning.
+   -Deep Learning
+   	- Tensorflow
+	- Keras
+	 
+   -Machine Learning
+   	-SK-learn
+	
+   -Data Processing
+   	-Pandas
+	-Numpy
+	-Matplotlib
+   -Web
+   	-HTML
+	-CSS
+	-JAVASCRIPT
+	-BOOTSTRAP
+	
 
-### Introduction
+## Introduction
 We at Diagnoze aim to provide quick results to the problems faced by our clients.Our webapp works on the principle of taking in info regarding the problem and giving instant results which guide them in taking further step towards treatment.Using this process,we have tried to reduce human errors on any ground.We mainly plan to develop a system where the complexity and computation time is low and accuracy is high.
 
-### Working
+## Working
 Through this webapp and deep learning,we have aimed to detect different diseases. \
 For example: \
 **Tumor:-** We took Images of MRI Scan from the user as input and then using deep learning,we checked for the presence of tumors in the Image.Then according to the result,we have suggested the user to seek professional medical help.
@@ -32,7 +56,7 @@ For example: \
 
 **Corona Virus:-** Taking in the chest x-ray from the patient and considering the general health details,we tried to anticipate if the user has corona virus.
 
-### Our Team 
+## Our Team 
 
 <table>
 <tr align="center">
