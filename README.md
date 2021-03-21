@@ -24,18 +24,18 @@ __Web Site__
 
 
 ## Tech Stack
-   * Deep Learning:
-   	- Tensorflow
-	- Keras
+* Deep Learning:
+	-  Tensorflow
+	-  Keras
 	 
-   * Machine Learning:
+* Machine Learning:
    	-SK-learn
 	
-   * Data Processing:
+* Data Processing:
    	-Pandas
 	-Numpy
 	-Matplotlib
-   * Web:
+* Web:
    	-HTML
 	-CSS
 	-JAVASCRIPT
