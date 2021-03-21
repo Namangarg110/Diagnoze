@@ -10,7 +10,7 @@
 
 __Web Site__
 
-<img src="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/screen-capture%20(online-video-cutter.com).gif" width=80%/>
+<img src="https://github.com/Namangarg110/Diagnoze/blob/master/static/images/screen-capture%20(online-video-cutter.com).gif" />
 
 
 
