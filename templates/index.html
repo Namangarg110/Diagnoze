@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | DIAGNOZE</title>
+  <title>Home | HealTrace</title>
   <script src="https://kit.fontawesome.com/a507955c58.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -30,8 +30,8 @@
 
     <nav class="navbar navbar-default" id="start">
       <div class="navbar-header">
-        <div id="mobilelogo"><a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px"
-              width="80px"> </a></div>
+        <div id="mobilelogo"><a href="index.html" class="logo"> <img
+              src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a></div>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
           aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -44,7 +44,8 @@
       <div class="collapse navbar-collapse" id="bs-nav-demo">
 
         <div class="navbar navbar-right ">
-          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo" height="80px" width="80px"> </a>
+          <a href="index.html" class="logo"> <img src="{{url_for('static', filename='images/logo3.png')}}" alt="Logo"
+              height="80px" width="80px"> </a>
           <ul>
             <a class="active" href="index.html"><span>Home</span></a>
             <a href="tumor.html"><span>Tumor</span></a>
@@ -62,7 +63,11 @@
     <div class="container">
       <div class="col-sm-6 first">
         <h1>Welcome on Board....!!</h1>
-        <p>We at Diagnoze aim to provide quick results to the problems faced by our clients.Our webapp works on the principle of taking in input/info regarding the problem and giving instant results which guide them in taking next/further step for treatment.Using deep learning/this process, we are trying to reduce human errors on any ground.We mainly plan to develop a system were the complexity and computation time is low and accuracy is high.
+        <p>We at HealTrace aim to provide quick results to the problems faced by our clients.Our webapp works on the
+          principle of taking in input/info regarding the problem and giving instant results which guide them in taking
+          next/further step for treatment.Using deep learning/this process, we are trying to reduce human errors on any
+          ground.We mainly plan to develop a system were the complexity and computation time is low and accuracy is
+          high.
         </p>
         <a href="#section2"><button type="menu">Get Started</button></a>
       </div>
@@ -72,11 +77,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-  
 
 
   <section class="section3" style="background-image:url({{url_for('static', filename='images/bg6.png')}});">
@@ -954,7 +954,8 @@
               </div>
               <div class="step-desc">
                 <h4 id="head">Process</h4>
-                <p class="mb-0">Fill up the form regarding the info required (or) upload the image to check your result.</p>
+                <p class="mb-0">Fill up the form regarding the info required (or) upload the image to check your result.
+                </p>
               </div>
             </div>
           </div>
@@ -975,9 +976,9 @@
       </div>
     </section>
   </section>
-<div style="width: 100%; position:relative; bottom: 3px;">
-  <img style="width: 100%" src="{{url_for('static', filename='images/bg7.png')}}">
-</div>
+  <div style="width: 100%; position:relative; bottom: 3px;">
+    <img style="width: 100%" src="{{url_for('static', filename='images/bg7.png')}}">
+  </div>
   <section id="section2" class="section2">
 
     <center>
@@ -985,23 +986,27 @@
     </center>
     <div class="col-md-3 col-sm-6 text-center">
       <img src="{{url_for('static', filename='images/brain5.gif')}}" alt="its me your brain" />
-      <p style="color:rgb(179, 179, 179);">Hello in there, I m brain tumor detector. Use me to know your brain's health. heehahahhahahah</p>
+      <p style="color:rgb(179, 179, 179);">Hello in there, I m brain tumor detector. Use me to know your brain's health.
+        heehahahhahahah</p>
       <center><a href="tumor.html"><button type="button">Tumor</button></a></center>
     </div>
     <div class="col-md-3 col-sm-6 text-center">
       <img src="{{url_for('static', filename='images/heart.gif')}}" alt="its me your heart" />
-      <p style="color:rgb(179, 179, 179);">Hello it's your heart speaking. Please pay attention to me. Please click the button below to know my
+      <p style="color:rgb(179, 179, 179);">Hello it's your heart speaking. Please pay attention to me. Please click the
+        button below to know my
         well-being.</p>
       <center><a href="heart_attack.html"><button type="button">Heart Attack</button></a></center>
     </div>
     <div class="col-md-3 col-sm-6 text-center">
       <img src="{{url_for('static', filename='images/diabetes.gif')}}" alt="its me your brain" />
-      <p style="color:rgb(179, 179, 179);">Hello I am your kidney. Please don't let your diabetes affect me. Get your diabetes checked right now.</p>
+      <p style="color:rgb(179, 179, 179);">Hello I am your kidney. Please don't let your diabetes affect me. Get your
+        diabetes checked right now.</p>
       <center><a href="diabetes.html"><button type="button">Diabetes</button></a></center>
     </div>
     <div class="col-md-3 col-sm-6 text-center">
       <img src="{{url_for('static', filename='images/virus.gif')}}" alt="its me your brain" />
-      <p style="color:rgb(179, 179, 179);">Hello in there, I am the novel Coronavirus. Get to know if I am with you or not.</p>
+      <p style="color:rgb(179, 179, 179);">Hello in there, I am the novel Coronavirus. Get to know if I am with you or
+        not.</p>
       <center><a href="corona.html"><button type="button">Coronavirus</button></a></center>
     </div>
   </section>
