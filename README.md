@@ -80,8 +80,8 @@ We at Diagnoze aim to provide quick results to the problems faced by our clients
 
 * **About Model** :- The first 23 layers of the mobilenet architecture were frozen and the rest of the layers were trained using the data,The image was preprocessed according to the mobileNet, The Adam optimizer was used and the loss function used was binary_crossentropy
 
-
-
+## Youtube Video
+https://www.youtube.com/watch?v=X9wrTBZj0JQ
 
 
 ## Our Team 
